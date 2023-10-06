@@ -6,7 +6,8 @@ app = Flask(__name__)
 def ImgSend():
     if request.method == 'POST':
         id = request.form['id']
-    return 0
+    print(id)
+    return id
 
 @app.route('/')
 def test():
